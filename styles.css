@@ -83,10 +83,17 @@ select {
   z-index: 5;
   height: 100%;
   width: 100%;
-  transform: scale(1.5);
+  transform: scale(1.2);
+  top: -6%;
 }
 
-.p-nickname {
+.p-nickname,
+a {
   color: #ffffff !important ;
   font-style: italic !important ;
+}
+
+a:hover {
+  color: #4493f8 !important ;
+  transition: color 0.3s ease-in-out !important ;
 }
