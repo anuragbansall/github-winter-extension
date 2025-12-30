@@ -14,11 +14,8 @@
   --border-radius: 10px;
 }
 
-* {
-  font-family: var(--font-family) !important ;
-}
-
 main {
+  font-family: var(--font-family) !important ;
   position: relative;
   background: var(--bg-image) top center !important ;
   background-size: cover !important ;
@@ -42,7 +39,11 @@ button,
   backdrop-filter: var(--blur-md) !important ;
 }
 
-ul li {
+ul li,
+.d-table,
+input,
+textarea,
+select {
   background-color: var(--overlay-color) !important ;
   backdrop-filter: var(--blur-md) !important ;
   padding: var(--padding-sm) !important ;
@@ -51,11 +52,15 @@ ul li {
   margin-bottom: 5px !important ;
 }
 
-.color-bg-default {
-  background-color: var(--overlay-color) !important ;
+.color-bg-default,
+.Label,
+.color-fg-muted {
+  /* background-color: var(--overlay-color) !important ;
   backdrop-filter: var(--blur-md) !important ;
   border-radius: var(--border-radius) !important ;
   border: 1px solid var(--border-color) !important ;
+  padding: var(--padding-sm) !important ; */
+  color: #ffffff !important ;
 }
 
 .github-winter-avatar-container {

@@ -1,6 +1,6 @@
 const avatar = document.querySelector(
   "[aria-label='Change your avatar']"
-).parentElement;
+)?.parentElement;
 
 avatar.classList.add("github-winter-avatar-container");
 
