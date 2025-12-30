@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Winter Edition",
+  "description": "Applies a winter-themed UI to GitHub profiles.",
+  "version": "1.0.0",
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
