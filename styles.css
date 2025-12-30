@@ -37,3 +37,18 @@ ul li {
   border-radius: 5px !important ;
   border: 1px solid #ffffff3c !important ;
 }
+
+.github-winter-avatar-container {
+  position: relative;
+}
+
+.github-winter-snow-fall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  border-radius: 50%;
+}

@@ -1,35 +1,12 @@
-// (function () {
-//   "use strict";
+const avatar = document.querySelector(
+  "[aria-label='Change your avatar']"
+).parentElement;
 
-//   function isProfilePage() {
-//     const path = window.location.pathname.split("/").filter(Boolean);
-//     return path.length === 1;
-//   }
+avatar.classList.add("github-winter-avatar-container");
 
-//   if (!isProfilePage()) return;
+const img = document.createElement("img");
+img.src =
+  "https://github.com/anuragbansall/github-winter-extension/blob/main/assets/snow-fall.gif?raw=true";
+img.classList.add("github-winter-snow-fall");
 
-//   document.documentElement.classList.add("github-winter-edition");
-
-//   // Optional: Add a winter banner
-//   const header = document.querySelector(".js-profile-editable-area");
-//   if (header) {
-//     const banner = document.createElement("div");
-//     banner.className = "winter-banner";
-//     banner.innerText = "❄ Winter Edition ❄";
-//     header.prepend(banner);
-//   }
-
-//   // Example: Snow effect (lightweight)
-//   function createSnowflake() {
-//     const snowflake = document.createElement("div");
-//     snowflake.className = "snowflake";
-//     snowflake.style.left = Math.random() * window.innerWidth + "px";
-//     snowflake.style.animationDuration = 3 + Math.random() * 5 + "s";
-//     snowflake.innerText = "❄";
-//     document.body.appendChild(snowflake);
-
-//     setTimeout(() => snowflake.remove(), 8000);
-//   }
-
-//   setInterval(createSnowflake, 500);
-// })();
+avatar.appendChild(img);
