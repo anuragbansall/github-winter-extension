@@ -4,9 +4,15 @@ const avatar = document.querySelector(
 
 avatar.classList.add("github-winter-avatar-container");
 
-const img = document.createElement("img");
-img.src =
+const snowFallImg = document.createElement("img");
+snowFallImg.src =
   "https://github.com/anuragbansall/github-winter-extension/blob/main/assets/snow-fall.gif?raw=true";
-img.classList.add("github-winter-snow-fall");
+snowFallImg.classList.add("github-winter-snow-fall");
 
-avatar.appendChild(img);
+const avatarFrameImg = document.createElement("img");
+avatarFrameImg.src =
+  "https://github.com/anuragbansall/github-winter-extension/blob/main/assets/winter-avatar-frame.png?raw=true";
+avatarFrameImg.classList.add("github-winter-avatar-frame");
+
+avatar.appendChild(snowFallImg);
+avatar.appendChild(avatarFrameImg);
