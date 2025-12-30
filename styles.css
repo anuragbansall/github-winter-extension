@@ -34,10 +34,19 @@ main::before {
 
 button,
 .Box,
-.graph-before-activity-overview {
+.graph-before-activity-overview,
+table,
+.BorderGrid-row {
   background-color: var(--overlay-color) !important ;
   border: 1px solid var(--border-color) !important ;
   backdrop-filter: var(--blur-md) !important ;
+}
+
+.BorderGrid-row {
+  padding: var(--padding-md) !important ;
+  margin-bottom: var(--padding-md) !important ;
+  border: 1px solid var(--border-color) !important ;
+  border-radius: var(--border-radius) !important ;
 }
 
 ul li,
